@@ -143,7 +143,13 @@
 	</defs>
 
 <g>
-	<text x="0" y="100"><?php echo getenv('REMOTE_ADDR'); ?></text>
+	<text x="0" y="100">
+	<?php
+		$command="/sbin/ifconfig eth0|grep inet|head -1|awk '{print $2}'";
+		$localIP = exec($command);
+		echo $localIP;
+	 ?>
+	 </text>
 </g>
 </svg>
 
