@@ -5,7 +5,7 @@
         <title>Network BootCamp 2017</title>
         <style>
             @import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
-
+            @import url(animate.css);
             body {
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -151,7 +151,7 @@
 	 </text>
 </g>
 </svg>
-<img src="nathawat.png" style="position: absolute; bottom:0; right:50px; height:400px;">
+<img src="nathawat.png" class="animated rubberBand infinite" style="position: absolute; bottom:0; right:50px; height:400px;">
 
 
         </div>
