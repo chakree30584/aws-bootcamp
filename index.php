@@ -2,26 +2,25 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Network BootCamp 2016</title>
+        <title>Network BootCamp 2017</title>
         <style>
             @import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
             body {
-                background-image: url("bootcamp_mountain.jpg");
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
-                background-color: #464646;
+                background-color: white;
             }
             svg{
-              width: 600px;
+              width: 700px;
               height: 120px;
               display: block;
               position: relative;
               overflow: hidden;
               margin: 0 auto;
-              background: black;
+              background: white;
             }
             .warpper{
                 width: 900px;
@@ -32,7 +31,7 @@
                 text-align: center;
             }
             .content{
-                color: #fff;
+                color: black;
                 width: 100%;
                 text-align: center;
                 font-size: 30px;
@@ -68,7 +67,7 @@
 	<defs>
 
 		<filter id="filter">
-		    <feFlood flood-color="black" result="black" />
+		    <feFlood flood-color="white" result="black" />
 		    <feFlood flood-color="red" result="flood1" />
 		    <feFlood flood-color="limegreen" result="flood2" />
 			<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
@@ -143,7 +142,7 @@
 	</defs>
 
 <g>
-	<text x="0" y="100">
+	<text x="0" y="100" style="font-size:80px; background-color:black; font-color:green; fill:#0000A0;">
 	<?php
 		$command="/sbin/ifconfig eth0|grep inet|head -1|awk '{print $2}'";
 		$localIP = exec($command);
@@ -152,6 +151,7 @@
 	 </text>
 </g>
 </svg>
+<img src="nathawat.png" style="position: absolute; bottom:0; right:50px; height:400px;">
 
 
         </div>
